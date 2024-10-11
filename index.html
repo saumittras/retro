@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind_CSS and DaisyUI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.11/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font CDN added here -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind Customized Utility Classes -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary_bg: "#ffffff",
+              banner_bg: "rgb(18, 19, 45)",
+              card_bg: "rgba(121, 125, 252, 0.1)",
+              title_bg: "rgb(243,243,244)",
+              theame_color: "rgb(121, 125, 252)",
+              font_color: "rgb(18, 19, 45)",
+              sub_font_color: "rgba(18, 19, 45, 0.6)",
+              sub_title_color: "rgb(18, 19, 45)",
+              sub_text_color: "rgba(19, 19, 19, 0.6)",
+              footer_text_color: "rgba(255, 255, 255, 0.9)",
+            },
+            fontFamily: {
+              primary_font: "Mulish",
+              sub_font: "Inter",
+            },
+            backgroundImage: {
+              leaf1: "",
+              input_bg: "",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Font Awesome CDN  -->
+    <script
+      src="https://kit.fontawesome.com/499b0bc6e9.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- External CSS added here -->
+    <link rel="stylesheet" href="style/style.css" />
+
+    <!-- Internal CSS added here -->
+    <style></style>
+
+    <title>Batch 9 Assignment-06</title>
+  </head>
+  <body class="bg-white font-primary_font">
+    <header>
+      <!-- Nav Bar section start from here -->
+      <nav class="lg:w-10/12 mx-auto py-12">
+        <div class="nav-div flex justify-between items-center">
+          <div class="logo tex-title_color text-4xl font-black">
+            <button>ReTro</button>
+          </div>
+          <div class="icon flex justify-between gap-3 items-center">
+            <button>
+              <img
+                class="hover:border-2 hover:rounded-full hover:border-theame_color"
+                src="images/home.png"
+                alt=""
+              />
+            </button>
+            <button>
+              <img
+                class="hover:border-2 hover:rounded-full hover:border-theame_color"
+                src="images/pen.png"
+                alt=""
+              />
+            </button>
+            <button>
+              <img
+                class="hover:border-2 hover:rounded-full hover:border-theame_color"
+                src="images/user.png"
+                alt=""
+              />
+            </button>
+            <button>
+              <img
+                class="hover:border-2 hover:rounded-full hover:border-theame_color"
+                src="images/flag.png"
+                alt=""
+              />
+            </button>
+
+            <button
+              class="px-10 py-4 bg-theame_color text-xl font-bold rounded-full hover:bg-white hover:text-theame_color hover:border-2 hover:border-theame_color text-white"
+            >
+              Sign In
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Banner section start from here -->
+      <div
+        class="banner-box bg-[url('images/bgbanner.png')] bg-bottom bg-no-repeat bg-banner_bg rounded-3xl lg:w-10/12 mx-auto"
+      >
+        <div class="banner lg:p-24 mx-auto py-12 flex justify-between z-10">
+          <div class="content">
+            <h1 class="text-6xl font-black text-white leading-10">
+              Welcome to the <br />
+              <span
+                class="bg-gradient-to-r from-theame_color to-blue-900 inline-block text-transparent bg-clip-text leading-10"
+                ><br />ReTro</span
+              >
+              Forum
+            </h1>
+            <p class="pt-5 text-white">
+              Share your favorite opinion and win and wp forum coffee mug!
+            </p>
+            <div
+              class="input-dev rounded-full bg-white mt-8 w-full flex justify-between"
+            >
+              <input
+                class="m-3 w-8/12 pl-3 focus:outline-none focus:rounded-full focus:border-theame_color focus:ring-1 focus:ring-sky-500"
+                type="text"
+                placeholder="Search here anything"
+              />
+              <button
+                class="px-7 w-4/12 m-3 py-3 bg-theame_color text-xl font-bold rounded-full hover:bg-white hover:text-theame_color hover:border hover:border-theame_color text-white"
+              >
+                Search
+              </button>
+            </div>
+          </div>
+          <div
+            class="user-info bg-white px-12 rounded-3xl flex justify-center items-center"
+          >
+            <table class="text-2xl table-auto border-spacing-20 p-3">
+              <tr class="">
+                <td>Registered Users</td>
+                <td>01</td>
+              </tr>
+              <tr>
+                <td>Forum</td>
+                <td>05</td>
+              </tr>
+              <tr>
+                <td>Topics</td>
+                <td>01</td>
+              </tr>
+              <tr>
+                <td>Replies</td>
+                <td>01</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- Banner section end from here -->
+    </header>
+
+    <main class="w-10/12 mx-auto">
+      <!-- Lets discuss section start from here -->
+      <div class="discuss text-center mt-24 w-9/12 mx-auto">
+        <h1 class="text-center font-black text-5xl">Let's Discuss</h1>
+        <p class="text-xl mt-6 text-sub_font_color">
+          Yes, you can run unit tests and view the results directly within the
+          app. The integrated testing features allow for a streamlined .
+        </p>
+      </div>
+      <!-- Lets discuss section start from here -->
+
+      <!-- Card Section start from Here -->
+      <div class="card-section">
+        <div class="dynamic-card grid grid-cols-4">
+          <!-- Card Item Section start frrom Here  -->
+          <div id="item-box" class="card-item col-span-3">main cards here</div>
+          <!-- Card Item Section end frrom Here  -->
+
+          <!-- read message secion start from here -->
+          <div class="title">
+            <div class="title-bar">
+              <h1 class="text-xl">Title</h1>
+            </div>
+            <div class="message-read"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Card Section start from Here -->
+
+      <!-- Join Our Forum section start from here -->
+      <div class="bg-banner_bg rounded-3xl mx-auto">
+        <div class="flex justify-around items-center p-6">
+          <div class="content pl-16">
+            <h1 class="text-white text-4xl text-left font-black pb-4">
+              Join Our Forum
+            </h1>
+            <p class="text-white pb-8">
+              Share your favorite opinion and win and wp forum coffee mug! Yes,
+              you can run unit tests and view the results directly within the
+              app.
+            </p>
+            <button
+              class="btn bg-theame_color text-xl font-bold rounded-full hover:bg-white hover:text-theame_color hover:border-2 hover:border-theame_color text-white"
+            >
+              Registered Now
+            </button>
+          </div>
+          <div>
+            <img src="images/joinforum.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- Join Our Forum section end from here -->
+
+      <!-- letest post section start from here -->
+      <div class="letest-post mt-24">
+        <!-- content box start from here -->
+        <div class="content-box">
+          <h1 class="text-font_color font-black text-5xl text-center">
+            Latest Posts
+          </h1>
+          <p class="text-center w-7/12 mx-auto">
+            Yes, you can run unit tests and view the results directly within the
+            app. The integrated testing features allow for a streamlined .
+          </p>
+        </div>
+        <div class="card-box grid grid-cols-3"></div>
+      </div>
+      <!-- letest post section end from here -->
+    </main>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
